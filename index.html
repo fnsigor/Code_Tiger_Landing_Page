@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--PREENCHER DESCRIPTION-->
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="assets/codetiger.png" type="image/png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Code Tiger</title>
+</head>
+
+<body>
+
+    <a href="" id="icon-whatsapp"><img src="assets/icon-whatsapp.svg" alt=""></a>
+
+    <nav>
+        <h6 id="header-text-logo"><a href="#section-header">Code <span>Tiger</a></span></h6>
+        <div>
+            <ul class="header-links">
+                <li>
+                    <p><a href="#section-header">Home</a></p>
+                </li>
+                <li>
+                    <p><a href="#section-printer">Produtos</a></p>
+                </li>
+                <li>
+                    <p><a href="#revenda">Seja revendedor</a></p>
+                </li>
+                <li>
+                    <p><a href="#ul-contato">Contato</a></p>
+                </li>
+            </ul>
+
+            <div class="menu-button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <header id="section-header">
+            <div id="header-content-box">
+                <div id="div-header-products">
+                    <p><a href="#section-printer">Impressoras térmicas</a></p>
+                    <p><a href="#section-ribbon">Ribbons</a></p>
+                    <p><a href="#section-datador">Datadores</a></p>
+                </div>
+                <a href="#revenda" id="header-button">se torne um revendedor</a>
+            </div>
+            <img src="assets/codetiger.png" alt="" id="header-logo">
+        </header>
+
+        <section id="section-about">
+            <p>Texto sobre a marca: A Code Tiger oferece impressoras térmicas de última geração; ribbons de cera, resina
+                e mistos; e conta também com seus novos datadores </p>
+        </section>
+
+        <section id="section-printer">
+            <h5 class="section-title">Impressoras Térmicas</h5>
+
+            <article class="printer-article" id="ct400">
+                <img class="printer-img" src="assets/ct400-6.png"></img>
+                <div class="div-ficha-tecnica">
+                    <h4>CT400</h4>
+                    <ul class="ul-ficha-tecnica">
+                        <li>
+                            <p>Transferência térmica direta e indireta</p>
+                        </li>
+                        <li>
+                            <p>Com alta velocidade, excelente estabilidade e durabilidade</p>
+                        </li>
+                        <li>
+                            <p>Detecção de papel por tipo de transmissão, com precisão e rapidez</p>
+                        </li>
+                        <li>
+                            <p>Função poderosa, suporte paralelo, serial, USB múltiplas interfaces</p>
+                        </li>
+                        <li>
+                            <p>Cabeça de impressora térmica importada, imprimindo de forma clara e estável</p>
+                        </li>
+                        <li>
+                            <p>Com função para correção automática de papel e carbono</p>
+                        </li>
+                        <li>
+                            <p>Fácil substituição do papel e da correia de carbono</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="printer-article" id="ct410">
+                <div class="div-ficha-tecnica">
+                    <h4>CT410</h4>
+                    <ul class="ul-ficha-tecnica">
+                        <li>
+                            <p>Transferência térmica direta</p>
+                        </li>
+                        <li>
+                            <p>Etiqueta fora da função inteligente</p>
+
+                        </li>
+                        <li>
+                            <p>Detecção de ponto ruim</p>
+                        </li>
+                        <li>
+                            <p>Impressão rápida, pode terminar uma única impressão de etiqueta por segundo, economizar
+                                muito tempo de impressão</p>
+                        </li>
+                        <li>
+                            <p>Desempenho de refrigeração superior, pode lidar com grandes cargas de trabalho de
+                                impressão</p>
+                        </li>
+                        <li>
+                            <p>Função de reimpressão pode efetivamente evitar a perda de informações da etiqueta ou a
+                                falta de impressão quando falta de papel</p>
+                        </li>
+                        <li>
+                            <p>Velocidade de impressão de 127 mm&sol;s</p>
+                        </li>
+                    </ul>
+                </div>
+                <img class="printer-img" src="assets/ct410-2.jpg"></img>
+            </article>
+
+
+        </section>
+
+        <section id="section-ribbon">
+            <h5 class="section-title">Ribbons</h5>
+
+            <div class="container">
+                <article class="ribbon-article">
+                    <h4>Ribbon Cera</h4>
+                    <div>
+                        <img src="assets/ribbon-fino.png" alt="">
+                        <p>Recomendado para impressão em etiquetas adesivas ou tags em papel couche e papel térmico,
+                            indicado para código de barra e caracteres alfa numéricos</p>
+                    </div>
+                </article>
+
+                <article class="ribbon-article">
+                    <h4>Ribbon Misto</h4>
+                    <div>
+                        <img src="assets/ribbon-fino.png" alt="">
+                        <p>Recomendado para impressão em etiquetas de BOPP e outros substratos que necessitem de
+                            resistência a atrito e a variação de temperatura, adaptando-se a grande variedade de
+                            superfícies</p>
+                    </div>
+                </article>
+
+                <article class="ribbon-article">
+                    <h4>Ribbon Resina</h4>
+                    <div>
+                        <img src="assets/ribbon-fino.png" alt="">
+                        <p>Utilizado em diversos setores industriais, recomendados para impressão em etiquetas BOPP,
+                            políester e outros substratos que necessitem de resistencia a atrito e a variação de
+                            temperatura</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="section-datador">
+            <h5 class="section-title">Datadores</h5>
+            <h4>Em breve...</h4>
+        </section>
+    </main>
+
+    <aside id="revenda">
+        <h5 class="section-title">Se torne um revendedor Code Tiger</h5>
+        
+        <div class="form-container">
+            <div class="div-bg-image">
+                <img src="assets/codetiger.png" alt="">
+            </div>
+            <form action="https://formsubmit.co/comercial@mkfsolucoes.com" method="POST">
+                <p>Preencha o formulário abaixo e entraremos em contato com você!</p>
+
+                <!-- configuracoes formulario -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_subject" value="Revenda Code Tiger">
+                <input type="hidden" name="_cc" value="marketing@mkfsolucoes.com">
+
+                <div class="label-div">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" placeholder="Meu Nome" id="name" required minlength="3">
+                </div>
+                
+
+                <div class="label-div">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="meumail@dominio.com" required>
+                </div>
+
+                <div class="label-div">
+                    <label for="phone">Telefone:</label>
+                    <input type="text" name="phone" id="phone" placeholder="48 90101-0101">
+                </div>
+
+                <div class="label-div">
+                    <label for="company">Empresa:</label>
+                    <input type="text" name="company" id="company" placeholder="Code Tiger">
+                </div>
+
+                <div class="label-div">
+                    <label for="message"></label>
+                    <textarea name="message" placeholder="Mensagem" cols="55" rows="10" id="message" style="display:none;"></textarea>
+                </div>
+
+                <div>
+                    <button id="bt-submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+    </aside>
+
+    <footer>
+        <div id="footer-links-container">
+            <div id="ul-contato">
+                <h5>Contato:</h5>
+                <ul>
+                    <li><a href="#">codetiger@outlook.com</a></li>
+                    <li><a href="#">Whatsapp: (48) 3333-333</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Produtos:</h5>
+                <ul>
+                    <li><a href="#section-printer">Impressoras térmicas</a></li>
+                    <li><a href="#section-ribbon">Ribbons</a></li>
+                    <li><a href="#section-datador">Datadores</a></li>
+                </ul>
+            </div>
+        </div>
+        <h6><a href="https://www.linkedin.com/in/fnsigor" target="_blank" id="myLink">@fnsigor</a></h6>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
