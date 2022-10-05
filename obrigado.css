@@ -1,0 +1,70 @@
+/*global styles*/
+
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --general-black: #1b1b1b;
+    --general-white: #FFF --form-bg: #1b1b1b11;
+    --paragraph-color: #FFF;
+    --title-color: #000;
+}
+
+@font-face {
+    font-family: Vtks Animal;
+    src: url(assets/VTKS-ANIMAL-2.ttf);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--general-black);
+}
+
+h1, p, a{
+    color: var(--paragraph-color);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding-inline: 2.5rem;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+p{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+a{
+    margin-top: 8rem;
+    display: block;
+    font-size: 1.8rem;
+    font-family: 'Space Grotesk', sans-serif;
+    text-shadow: 0 0 15px #fff;
+}
+
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    a{
+        font-size: 1.6rem;
+    }
+}
