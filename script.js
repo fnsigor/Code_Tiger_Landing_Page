@@ -18,12 +18,11 @@ function onScroll() {
 
 
 function showNavOnScroll(){
-    if(scrollY > 500){
-        document.querySelector('nav').classList.add('navScrolled')
+    if(scrollY > 550){
+        document.querySelector('.desktop-menu').classList.add('navScrolled')
         
     } else {
-        document.querySelector('nav').classList.remove('navScrolled')
-        
+        document.querySelector('.desktop-menu').classList.remove('navScrolled')
     }
 }
 
@@ -35,16 +34,15 @@ function showIconWhatsapp(){
     }
 }
 
+document.getElementById('mobile-menu-button').addEventListener('click', ()=>{
+    document.querySelector('.mobile-menu').style.display = 'block'
+    document.querySelector('body').style.overflow = 'hidden'
+})
 
+document.getElementById('button-close-menu').addEventListener('click', closeMenu)
+document.querySelectorAll('.mobile-menu li a').forEach(link => link.addEventListener('click', closeMenu))
 
-ScrollReveal({
-    origin: 'top',
-    distance: '30px',
-    duration: 300
-}).reveal(`
-    #section-header, 
-    ##section-printer, 
-    #ct400, 
-    #ct410,
-    #section-ribbon,
-    #revenda`);
+function closeMenu(){
+    document.querySelector('.mobile-menu').style.display = 'none'
+    document.querySelector('body').style.overflow = 'scroll'
+}
