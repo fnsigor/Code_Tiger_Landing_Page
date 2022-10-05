@@ -144,7 +144,7 @@ a {
     width: 100vw;
     height: 100vh;
 
-    background-image: url("assets/wpp-menu.png");
+    background-image: url("assets/code-tiger-wallpaper-menu.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -231,7 +231,7 @@ nav h6 span {
     margin-bottom: 20rem;
     height: calc(100vh);
 
-    background-image: url(assets/black-white-tiger-home.jpg);
+    background-image: url(assets/tigre-code-tiger-home.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -448,7 +448,7 @@ header p a:hover {
     max-width: 30rem;
     position: relative;
 
-    background-image: url(assets/black-white-tiger-form.jpg);
+    background-image: url(assets/tigre-code-tiger-formulario.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -755,7 +755,7 @@ footer li a {
     }
 
     #section-header {
-        background-image: url("assets/mobile-tiger.jpg");
+        background-image: url("assets/tigre-code-tiger-mobile.webp");
         /* Safari 6.0 - 9.0 */
         -webkit-filter: grayscale(100%) contrast(120%);
         filter: grayscale(100%) contrast(120%);
