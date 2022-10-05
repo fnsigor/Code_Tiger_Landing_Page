@@ -760,6 +760,7 @@ footer li a {
         -webkit-filter: grayscale(100%) contrast(120%);
         filter: grayscale(100%) contrast(120%);
 
+        background-attachment: scroll;
     }
 
     #div-header-products p {
