@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A Code Tiger oferece impressoras térmicas de última geração; ribbons de cera, resina
     e mistos; e conta também com sua linha própria de datadores inkjet">
-    <link rel="shortcut icon" href="assets/logo-code-tiger.webp" type="image/webp">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="./assets/logo-code-tiger.png" type="image/webp">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/swiperStyle.css">
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,12 +17,16 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
     <title>Code Tiger</title>
 </head>
 
 <body>
 
-    <a href="#" id="icon-whatsapp"><img src="assets/icon-whatsapp.svg" alt="icon Whatsapp" aria-label="Whatsapp Code Tiger"></a>
+    <a href="https://wa.me/554891673851?text=Olá!%20Vim%20pelo%20site%20da%20Code%20Tiger" id="icon-whatsapp"><img
+            src="assets/icon-whatsapp.svg" alt="icon Whatsapp" aria-label="Whatsapp Code Tiger"></a>
 
 
     <nav class="mobile-menu">
@@ -88,7 +94,7 @@
                 </div>
                 <a href="#revenda" id="header-button">se torne um revendedor</a>
             </div>
-            <img src="assets/logo-code-tiger.webp" alt="logo code tiger" id="header-logo">
+            <img src="assets/logo-code-tiger.png" alt="logo code tiger" id="header-logo">
         </header>
 
         <section id="section-about">
@@ -100,7 +106,80 @@
             <h5 class="section-title">Impressoras Térmicas</h5>
 
             <article class="printer-article" id="ct400">
-                <img class="printer-img" src="assets/impressora-termica-code-tiger-ct400.webp" alt="impressora termica code tiger ct400">
+                <div class="container-do-swipper">
+
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
                 <div class="div-ficha-tecnica">
                     <h4>CT400</h4>
                     <ul class="ul-ficha-tecnica">
@@ -160,7 +239,80 @@
                         </li>
                     </ul>
                 </div>
-                <img class="printer-img" src="assets/impressora-termica-code-tiger-ct410.webp" alt="impressora termica code tiger ct410">
+                <div class="container-do-swipper">
+
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
             </article>
 
 
@@ -212,7 +364,7 @@
 
         <div class="form-container">
             <div class="div-bg-image">
-                <img src="assets/logo-code-tiger.webp" alt="logo code tiger">
+                <img src="assets/logo-code-tiger.png" alt="logo code tiger">
             </div>
             <form action="https://formsubmit.co/comercial@mkfsolucoes.com" method="POST">
                 <p>Preencha o formulário abaixo e entraremos em contato com você!</p>
@@ -222,7 +374,8 @@
                 <input type="hidden" name="_template" value="box">
                 <input type="hidden" name="_subject" value="Revenda Code Tiger">
                 <input type="hidden" name="_cc" value="marketing@mkfsolucoes.com">
-                <input type="hidden" name="_next" value="https://fnsigor.github.io/Code_Tiger_Landing_Page/obrigado.html">
+                <input type="hidden" name="_next"
+                    value="https://fnsigor.github.io/Code_Tiger_Landing_Page/obrigado.html">
 
                 <div class="label-div">
                     <label for="name">Nome: <span class="asterisco">*</span></label>
@@ -231,7 +384,7 @@
 
 
                 <div class="label-div">
-                    <label for="email">Email:  <span class="asterisco">*</span></label>
+                    <label for="email">Email: <span class="asterisco">*</span></label>
                     <input type="email" name="email" id="email" placeholder="meumail@dominio.com" required>
                 </div>
 
@@ -280,7 +433,9 @@
         <a href="https://www.linkedin.com/in/fnsigor" target="_blank" id="myLink">Desenvolvido por <br> @fnsigor</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/swiperConfigs.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

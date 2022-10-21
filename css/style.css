@@ -20,7 +20,7 @@
 
 @font-face {
     font-family: Vtks Animal;
-    src: url(assets/VTKS-ANIMAL-2.ttf);
+    src: url(../assets/VTKS-ANIMAL-2.ttf);
 }
 
 /*text selection*/
@@ -60,6 +60,7 @@
 
 body {
     background-color: rgb(255, 255, 255);
+    position: relative;
 }
 
 html {
@@ -139,12 +140,12 @@ a {
     display: none;
 
     position: fixed;
-    z-index: 2;
+    z-index: 10;
 
     width: 100vw;
     height: 100vh;
 
-    background-image: url("assets/code-tiger-wallpaper-menu.webp");
+    background-image: url("../assets/code-tiger-wallpaper-menu.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -170,7 +171,7 @@ a {
 
 .mobile-menu a {
     font-size: 2.5rem;
-    text-shadow: 0 0 2rem #fff;
+    text-shadow: 0 0 2rem rgb(197, 23, 23);
     font-weight: 600;
     filter: brightness(1) saturate(100%);
 }
@@ -191,7 +192,7 @@ a {
 
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 9;
 
     padding: 1.2rem 4rem;
     width: 100%;
@@ -231,7 +232,7 @@ nav h6 span {
     margin-bottom: 20rem;
     height: calc(100vh);
 
-    background-image: url(assets/tigre-code-tiger-home.webp);
+    background-image: url(../assets/tigre-code-tiger-home.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -329,6 +330,8 @@ header p a:hover {
     height: max-content;
 
     margin: 0 auto;
+
+
 }
 
 .div-ficha-tecnica {
@@ -337,7 +340,10 @@ header p a:hover {
     display: flex;
     flex-direction: column;
 
+    
+    
 }
+
 
 .div-ficha-tecnica li {
     font-size: 1.8rem;
@@ -350,12 +356,6 @@ header p a:hover {
 }
 
 
-.printer-img {
-    max-width: 40rem;
-}
-
-
-
 .printer-article li:not(.printer-article li:last-child) {
     margin-bottom: 1rem;
 }
@@ -366,7 +366,7 @@ header p a:hover {
     font-weight: 600;
     margin-bottom: 1.4rem;
     font-family: 'Space Grotesk', sans-serif;
-    text-align: center;
+    text-align: start;
 }
 
 
@@ -395,6 +395,10 @@ header p a:hover {
 
     display: block;
     margin: 0 auto;
+
+    object-fit:contain;
+
+    
 }
 
 .ribbon-article h4 {
@@ -448,7 +452,7 @@ header p a:hover {
     max-width: 30rem;
     position: relative;
 
-    background-image: url(assets/tigre-code-tiger-formulario.webp);
+    background-image: url(../assets/tigre-code-tiger-formulario.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -755,7 +759,7 @@ footer li a {
     }
 
     #section-header {
-        background-image: url("assets/tigre-code-tiger-mobile.webp");
+        background-image: url("../assets/tigre-code-tiger-mobile.webp");
         /* Safari 6.0 - 9.0 */
         -webkit-filter: grayscale(100%) contrast(120%);
         filter: grayscale(100%) contrast(120%);
@@ -795,10 +799,6 @@ footer li a {
         flex-direction: column-reverse;
     }
 
-    .printer-img {
-        max-height: 24rem;
-    }
-
     .div-ficha-tecnica {
         width: 100%;
         margin-top: 2rem;
@@ -815,6 +815,7 @@ footer li a {
 
     .div-ficha-tecnica h4{
         font-size: 2.2rem;
+        text-align: center;
     }
 
 
