@@ -17,13 +17,18 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <!-- swiper js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Code Tiger</title>
 </head>
 
 <body>
+
+    <span class="submit-message erro">Erro ao enviar formulário</span>
+    <span class="submit-message sucesso">Formulário enviado com sucesso!</span>
+    <span class="submit-message formIncompleto">Informe o nome e o email</span>
 
     <a href="https://wa.me/554891673851?text=Olá!%20Vim%20pelo%20site%20da%20Code%20Tiger" id="icon-whatsapp"><img
             src="assets/icon-whatsapp.svg" alt="icon Whatsapp" aria-label="Whatsapp Code Tiger"></a>
@@ -108,7 +113,8 @@
             <article class="printer-article" id="ct400">
                 <div class="container-do-swipper">
 
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="swiper mySwiper2">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;"
+                        class="swiper mySwiper2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
@@ -178,7 +184,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
                 <div class="div-ficha-tecnica">
                     <h4>CT400</h4>
@@ -241,7 +247,8 @@
                 </div>
                 <div class="container-do-swipper">
 
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="swiper mySwiper2">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;"
+                        class="swiper mySwiper2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
@@ -311,7 +318,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
             </article>
 
@@ -366,46 +373,37 @@
             <div class="div-bg-image">
                 <img src="assets/logo-code-tiger.png" alt="logo code tiger">
             </div>
-            <form action="https://formsubmit.co/comercial@mkfsolucoes.com" method="POST">
+            <form action="https://formsubmit.co/igorfernamdez@gmail.com" method="POST">
                 <p>Preencha o formulário abaixo e entraremos em contato com você!</p>
 
                 <!-- configuracoes formulario -->
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="box">
-                <input type="hidden" name="_subject" value="Revenda Code Tiger">
                 <input type="hidden" name="_cc" value="marketing@mkfsolucoes.com">
-                <input type="hidden" name="_next"
-                    value="https://fnsigor.github.io/Code_Tiger_Landing_Page/obrigado.html">
 
                 <div class="label-div">
                     <label for="name">Nome: <span class="asterisco">*</span></label>
-                    <input type="text" name="name" placeholder="Meu Nome" id="name" required minlength="3">
+                    <input type="text" name="name" placeholder="Insira o nome" id="name" required minlength="3">
                 </div>
 
 
                 <div class="label-div">
                     <label for="email">Email: <span class="asterisco">*</span></label>
-                    <input type="email" name="email" id="email" placeholder="meumail@dominio.com" required>
+                    <input type="email" name="email" id="email" placeholder="email@dominio.com" required>
                 </div>
 
                 <div class="label-div">
                     <label for="phone">Telefone:</label>
-                    <input type="text" name="phone" id="phone" placeholder="48 90101-0101" minlength="10">
+                    <input type="text" name="phone" id="phone" placeholder="(00) 00000-0000" minlength="10">
                 </div>
 
                 <div class="label-div">
                     <label for="company">Empresa:</label>
-                    <input type="text" name="company" id="company" placeholder="Code Tiger" minlength="3">
-                </div>
-
-                <div class="label-div">
-                    <label for="message"></label>
-                    <textarea name="message" placeholder="Mensagem" cols="55" rows="10" id="message"
-                        style="display:none;"></textarea>
+                    <input type="text" name="company" id="company" placeholder="Insira a empresa" minlength="3">
                 </div>
 
                 <div>
-                    <button id="bt-submit" aria-label="Enviar formulário">Enviar</button>
+                    <button id="bt-submit" aria-label="Enviar formulário" type="button">Enviar</button>
                 </div>
             </form>
         </div>
@@ -436,6 +434,8 @@
     <script src="./js/script.js"></script>
     <script src="./js/swiperConfigs.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/scrollReveal.js"></script>
 </body>
 
 </html>

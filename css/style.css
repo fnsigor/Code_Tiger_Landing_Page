@@ -171,12 +171,43 @@ a {
 
 .mobile-menu a {
     font-size: 2.5rem;
-    text-shadow: 0 0 2rem rgb(197, 23, 23);
+    text-shadow: 0 0 2rem rgba(255, 255, 255, 0.548);
     font-weight: 600;
     filter: brightness(1) saturate(100%);
 }
 
 
+
+.submit-message {
+    opacity: 0;
+
+    font-size: 1.6rem;
+    font-family: 'Space Grotesk', sans-serif; 
+    color: #fff;
+    min-width: max-content;
+
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    z-index: 999;
+
+    transform: translateX(-50%);
+
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+
+    transition: .1s;
+}
+
+.submit-message.sucesso{
+    background-color: rgb(62, 167, 74);
+    box-shadow: 0 0 10px rgb(62, 167, 74);
+}
+
+.submit-message.erro, .submit-message.formIncompleto{
+    background-color: rgba(177, 46, 46, 0.938);
+    box-shadow: 0 0 10px  rgba(177, 46, 46, 0.938);
+}
 
 
 
@@ -247,6 +278,7 @@ nav h6 span {
     bottom: 15%;
     left: 2rem;
 
+    transition: .5s;
 }
 
 #header-logo {
@@ -269,6 +301,8 @@ nav h6 span {
     line-height: 5.8rem;
     color: var(--paragraph-color);
     font-family: 'Space Grotesk', sans-serif;
+    
+    transform: translateX(-100vw);
 }
 
 #header-button {
@@ -963,6 +997,7 @@ footer li a {
 
     #header-content-box {
         bottom: 15%;
+        left: 1rem;
     }
 
     #div-header-products p {
@@ -1118,6 +1153,11 @@ footer li a {
     footer li a {
         font-size: 1.3rem;
     }
+
+    #myLink{
+        font-size: 1.2rem;
+    }
+
 
 
 
