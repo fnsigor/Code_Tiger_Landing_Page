@@ -85,7 +85,6 @@ aside {
 
 footer {
     background-color: var(--general-black);
-
 }
 
 footer,
@@ -161,7 +160,7 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    
+
     transform: translateY(-50%) translateX(-50%);
 }
 
@@ -182,14 +181,14 @@ a {
     opacity: 0;
 
     font-size: 1.6rem;
-    font-family: 'Space Grotesk', sans-serif; 
+    font-family: 'Space Grotesk', sans-serif;
     color: #fff;
     min-width: max-content;
 
     position: fixed;
     top: 15%;
     left: 50%;
-    z-index: 999;
+    z-index: 9;
 
     transform: translateX(-50%);
 
@@ -199,18 +198,41 @@ a {
     transition: .1s;
 }
 
-.submit-message.sucesso{
+.submit-message.sucesso {
     background-color: rgb(62, 167, 74);
     box-shadow: 0 0 10px rgb(62, 167, 74);
 }
 
-.submit-message.erro, .submit-message.formIncompleto{
+.submit-message.erro,
+.submit-message.formIncompleto {
     background-color: rgba(177, 46, 46, 0.938);
-    box-shadow: 0 0 10px  rgba(177, 46, 46, 0.938);
+    box-shadow: 0 0 10px rgba(177, 46, 46, 0.938);
 }
 
 
+.imagem-ampliada {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
 
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 999;
+
+    background-color: rgba(0, 0, 0, 0.800);
+}
+
+.imagem-ampliada img {
+    height: 55rem;
+    width: min-content;
+    margin: 0 auto;
+    /* object-fit: contain; */
+    box-shadow: 0 0 15px #fff;
+}
 
 
 
@@ -301,7 +323,7 @@ nav h6 span {
     line-height: 5.8rem;
     color: var(--paragraph-color);
     font-family: 'Space Grotesk', sans-serif;
-    
+
     transform: translateX(-100vw);
 }
 
@@ -374,8 +396,8 @@ header p a:hover {
     display: flex;
     flex-direction: column;
 
-    
-    
+
+
 }
 
 
@@ -430,9 +452,9 @@ header p a:hover {
     display: block;
     margin: 0 auto;
 
-    object-fit:contain;
+    object-fit: contain;
 
-    
+
 }
 
 .ribbon-article h4 {
@@ -586,7 +608,7 @@ button:hover {
     font-weight: 600;
 }
 
-.asterisco{
+.asterisco {
     color: rgb(223, 39, 39);
 }
 
@@ -629,7 +651,7 @@ footer li a {
 
 #myLink {
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
@@ -646,6 +668,10 @@ footer li a {
 @media (max-width: 1500px) {
 
     /*geral*/
+
+    .imagem-ampliada img {
+        height: 45rem;
+    }
 
     #icon-whatsapp {
         display: none;
@@ -762,6 +788,12 @@ footer li a {
 /*==============================TABLET*/
 @media (max-width: 1150px) {
 
+
+    .imagem-ampliada img {
+        height: 40rem;
+    }
+
+
     /*section title*/
     .section-title {
         margin-bottom: 6.5rem;
@@ -847,13 +879,13 @@ footer li a {
         margin: 0;
     }
 
-    .div-ficha-tecnica h4{
+    .div-ficha-tecnica h4 {
         font-size: 2.2rem;
         text-align: center;
     }
 
 
-    
+
 
 
 
@@ -938,11 +970,6 @@ footer li a {
 
 
 
-    /*footer*/
-    #myLink {
-        font-size: 1.3rem;
-    }
-    
 
 
 }
@@ -957,6 +984,10 @@ footer li a {
 
 /*======================================CELULARE*/
 @media (max-width: 700px) {
+
+    .imagem-ampliada img {
+        height: 25rem;
+    }
 
     /*geral*/
     .section-title {
@@ -1017,11 +1048,11 @@ footer li a {
 
 
     /*about*/
-    #section-about{
+    #section-about {
         margin-bottom: 20rem;
     }
 
-    #section-about p{
+    #section-about p {
         max-width: none;
         width: 85%;
     }
@@ -1039,11 +1070,11 @@ footer li a {
         max-height: 18rem;
     }
 
-    .div-ficha-tecnica h4{
+    .div-ficha-tecnica h4 {
         font-size: 1.8rem;
     }
 
-    .div-ficha-tecnica p{
+    .div-ficha-tecnica p {
         font-size: 1.6rem;
     }
 
@@ -1085,7 +1116,7 @@ footer li a {
 
     /*form*/
 
-    aside h5{
+    aside h5 {
         padding-inline: 1.6rem;
     }
 
@@ -1154,7 +1185,7 @@ footer li a {
         font-size: 1.3rem;
     }
 
-    #myLink{
+    #myLink {
         font-size: 1.2rem;
     }
 
