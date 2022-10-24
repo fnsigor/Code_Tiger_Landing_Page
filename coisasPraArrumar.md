@@ -4,5 +4,7 @@
 >mais fotos impresosras | OK
 >tirar o redirecionamento do formsubmit
 >lib pra aparecer durante o scroll
+>funcao pra visualizar imagem ao clicar quando estiver no moible
+
 *ver email 
 *ver hospedagem

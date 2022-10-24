@@ -5,6 +5,7 @@ ScrollReveal({
 }).reveal(`
     #section-about p, 
     #section-ribbon .container,
+    #section-datador h4,
     .form-container
     `);
 

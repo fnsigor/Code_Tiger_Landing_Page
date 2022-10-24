@@ -1,16 +1,16 @@
 window.onload = function () {
 
-setTimeout(() => {
-    document.querySelector('#div-header-products p:first-child').style.transform = "translateX(0%)"
-},350)
+    setTimeout(() => {
+        document.querySelector('#div-header-products p:first-child').style.transform = "translateX(0%)"
+    }, 350)
 
-setTimeout(() => {
-    document.querySelector('#div-header-products p:nth-of-type(2)').style.transform = "translateX(0%)"
-},450)
+    setTimeout(() => {
+        document.querySelector('#div-header-products p:nth-of-type(2)').style.transform = "translateX(0%)"
+    }, 450)
 
-setTimeout(() => {
-    document.querySelector('#div-header-products p:last-child').style.transform = "translateX(0%)"
-},550)
+    setTimeout(() => {
+        document.querySelector('#div-header-products p:last-child').style.transform = "translateX(0%)"
+    }, 550)
 
 
     //Vanilla JS Scroll effects
@@ -68,8 +68,8 @@ setTimeout(() => {
 
             inputNome.style.borderColor = '#000'
             inputEmail.style.borderColor = '#000'
-            inputNome.style.backgroundColor = 'inherit'
-            inputEmail.style.backgroundColor = 'inherit'
+            inputNome.style.backgroundColor = '#FFF'
+            inputEmail.style.backgroundColor = '#FFF'
 
             axios.defaults.headers.post['Content-Type'] = 'application/json';
             axios.post('https://formsubmit.co/ajax/igorfernamdez@gmail.com', {
@@ -90,10 +90,10 @@ setTimeout(() => {
                     showErrorMessage()
                 });
 
-                inputNome.value = ''
-                inputEmail.value = ''
-                document.getElementById('phone').value = ''
-                document.getElementById('company').value = ''
+            inputNome.value = ''
+            inputEmail.value = ''
+            document.getElementById('phone').value = ''
+            document.getElementById('company').value = ''
 
         } else {
 
@@ -107,8 +107,8 @@ setTimeout(() => {
             setTimeout(() => {
                 inputNome.style.borderColor = '#000'
                 inputEmail.style.borderColor = '#000'
-                inputNome.style.backgroundColor = 'inherit'
-                inputEmail.style.backgroundColor = 'inherit'
+                inputNome.style.backgroundColor = '#FFF'
+                inputEmail.style.backgroundColor = '#FFF'
             }, 10000)
 
         }
@@ -142,6 +142,33 @@ setTimeout(() => {
 
         return false
     }
+
+
+
+    //show amplied image at mobile
+
+    document.querySelectorAll('.mySwiper2 img').forEach(imagem => {
+        imagem.addEventListener('click', evt => {
+            const divImagem = document.querySelector('.imagem-ampliada')
+
+            if (divImagem.getAttribute('ampliada') === null) {
+                divImagem.setAttribute('ampliada', '')
+                divImagem.style.display = 'flex'
+                divImagem.firstElementChild.setAttribute('src', evt.target.getAttribute('src'))
+                document.querySelector('body').style.overflow = 'hidden'
+            }
+
+
+
+            divImagem.addEventListener('click', event => {
+                divImagem.removeAttribute('ampliada', '')
+                divImagem.style.display = 'none'
+                document.querySelector('body').style.overflow = 'initial'
+            })
+
+
+        })
+    })
 
 
 
